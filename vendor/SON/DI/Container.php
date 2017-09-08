@@ -1,6 +1,8 @@
 <?php
 namespace SON\DI;
 
+use App\Conn;
+
 class Container
 {
   public static function getModel($model)
