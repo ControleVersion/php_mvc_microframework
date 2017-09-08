@@ -1,2 +1,5 @@
 Route: ; Controller: IndexController
-<?php echo $this->view->cars[0];?>
+<?php foreach ($this->views->clients as $client) { ?>
+  <p><?php echo $client['name'] ?> -- <?php echo $client['email'] ?></p>
+  <hr/>
+<?php }?>
